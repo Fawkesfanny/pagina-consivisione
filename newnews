@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TITOLO_NOTIZIA</title>
+
+  <!-- ✅ Meta OG per anteprima -->
+  <meta property="og:title" content="TITOLO_NOTIZIA" />
+  <meta property="og:description" content="BREVE_DESCRIZIONE_DELLA_NOTIZIA" />
+  <meta property="og:image" content="URL_IMMAGINE_PUBBLICA" />
+  <meta property="og:url" content="URL_ORIGINALE_DELLA_NOTIZIA" />
+  <meta property="og:type" content="website" />
+
+  <!-- Redirect dopo 3 secondi -->
+  <script>
+    setTimeout(function() {
+      window.location.href = "URL_ORIGINALE_DELLA_NOTIZIA";
+    }, 1000);
+  </script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #1E3A8A;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stai per essere reindirizzato...</h1>
+  <p>Verrai indirizzato automaticamente alla notizia.</p>
+  <a class="btn" href="URL_ORIGINALE_DELLA_NOTIZIA">Vai subito alla notizia</a>
+</body>
+</html>
